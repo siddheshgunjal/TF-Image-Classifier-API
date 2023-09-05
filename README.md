@@ -37,19 +37,21 @@ Don't forget to :star: this repo :smiley:
 	* `weights.h5`: Updated weights of neural network after training
 
 ### Run Prediction from browser
-* Run Flask application with `python app.py`. This is start our application with `localhost:8108`
-* Visiting this URL in browser, you should see the message, **Image Classification API is running**.
-* Go to `localhost:8108/classification` and you'll see following result:
+* Run Flask application with `python app.py`. This will start our application at `localhost:8108`
+* Visit this URL in browser and you should see the message, **Image Classification API is running**. This verifies that our API is running at server side.
+* Go to `localhost:8108/classification` for prediction task:
 ![classification page](./screenshots/1.png?raw=true)
 * Drag your image in the drop zone or upload it and click **Run Prediction**, which will then run the prediction and show you the result with below screen:
 ![classification-result page](./screenshots/2.png?raw=true)
 ![classification-result page](./screenshots/3.png?raw=true)
 
+Your Custom Image classification API is ready!
+
 ##  Support :sparkles:
 If you get stuck, we’re here to help. The following are the best ways to get assistance working through your issue:
 
 * Use our [Github Issue Tracker][gh-issues] for reporting bugs or requesting features.
-Contribution are the best way to keep `slackker` amazing :muscle:
+Contribution are the best way to keep this repo amazing :muscle:
 * If you want to contribute please refer [Contributor's Guide][gh-contrib] for how to contribute in a helpful and collaborative way :innocent:
 
 ## Author :sunglasses:
