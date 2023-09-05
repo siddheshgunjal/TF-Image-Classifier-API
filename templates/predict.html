@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Classification</title>
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+  </head>
+  <body>
+  	<h1 style="text-align: center;">Custom Image Classification API</h1>
+  	<h3 style="text-align:center;">Author: <a href="https://siddheshgunjal.github.io" target="_blank" style="text-decoration: none;"><b>Siddhesh Gunjal</b></a></h3>
+  	{% if not output %}
+  	<div class="center" id="overflow" style="display: none;">
+		  <div class="container">
+		    <span class="dot"></span>
+		    <span class="dot"></span>
+		    <span class="dot"></span>
+		    <span class="dot"></span>
+		  </div>
+		</div>
+  	<form action = "/classification" method = "POST" enctype = "multipart/form-data">
+		   <label for="image" class="drop-container" id="dropcontainer">
+		   	<span class="drop-title">Drop '.jpg' image here</span>
+		   	or
+		   	<input type="file" id="image", name="image" accept=".jpg">
+		   	<!-- <input type="text" id="image" name="image" placeholder="Paste your image link"> -->
+		   	<br>
+		   	<img id="preview" src="#" style="display:none;">
+		   	<br>
+		   	<input type="submit" id="run" value="Run Prediction" onclick=show_overflow() disabled>
+		   	<!-- <input type="submit" id="run" value="Run Prediction" disabled> -->
+		   </label>
+		</form>
+		{% endif %}
+
+		{% if output %}
+		<!-- <p>It's a {{output}}</p> -->
+		<div class="float-container">
+		  <div class="float-child-left">
+		    <h1 id="title">Uploaded Image</h1>
+		    <button id="try_another" onClick="window.location.href=window.location.href" tabindex="1">Try with another image</button>
+		    <div id="img_div">
+		    	<img src="/Input">
+		    </div>
+		    </img>
+		  </div>
+		  
+		  <div class="float-child-right">
+		    <h1 style="text-align: center; font-size: 3em; margin: 0;">Prediction</h1>
+		    <div id="pred_div">
+		    	<h1>It's a {{output}}</h1>
+		    </div>
+		  </div>
+		</div>
+		{% endif %}
+
+		<script src="static/script.js"></script>
+  		
+  </body>
+</html>
