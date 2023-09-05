@@ -1,7 +1,7 @@
 # Custom Image Classification API
 This is a Custom Image Classification API built from scratch. The Custom Neural network is built with **TensorFlow v1**.
 
-Don't forget to :star: this repo :smiley:
+Don't forget to :star: this repo!
 
 # Table of Contents :notebook:
 * [Installation](#installation-arrow_down)
