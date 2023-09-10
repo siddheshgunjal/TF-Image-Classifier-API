@@ -37,11 +37,16 @@ Don't forget to :star: this repo!
 	* `weights.h5`: Updated weights of neural network after training
 
 ### Run Prediction from browser
-* Run Flask application with `python app.py`. This will start our application at `localhost:8108`
-* Visit this URL in browser and you should see the message, **Image Classification API is running**. This verifies that our API is running at server side.
-* Go to `localhost:8108/classification` for prediction task:
+#### 1. Run application with Flask's in-built server: 
+Use `python app.py` in terminal. This will start our application at `localhost:8188`
+### OR
+#### 2. Run application with Gunicorn server:
+Use `gunicorn -b :8188 -c gunicorn.conf.py app:app` in terminal. This will start our application at `localhost:8188`
+
+Visit this URL in browser and you should see the message, **Image Classification API is running**. This verifies that our API is running at server side.
+Go to `localhost:8188/classification` for prediction task:
 ![classification page](./screenshots/1.png?raw=true)
-* Drag your image in the drop zone or upload it and click **Run Prediction**, which will then run the prediction and show you the result with below screen:
+Drag your image in the drop zone or upload it and click **Run Prediction**, which will then run the prediction and show you the result with below screen:
 ![classification-result page](./screenshots/2.png?raw=true)
 ![classification-result page](./screenshots/3.png?raw=true)
 
@@ -55,11 +60,10 @@ Contribution are the best way to keep this repo amazing :muscle:
 * If you want to contribute please refer [Contributor's Guide][gh-contrib] for how to contribute in a helpful and collaborative way :innocent:
 
 ## Author :sunglasses:
-* Siddhesh Gunjal
+### Siddhesh Gunjal
   * [Website][portfolio]
-  * [GitHub][github]
   * [LinkedIn][linkedin]
-
+  * [GitHub][github]
 
 <!-- Markdown link -->
 [virtualenv]: https://docs.python.org/3/library/venv.html

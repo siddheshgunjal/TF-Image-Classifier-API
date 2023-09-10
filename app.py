@@ -69,4 +69,4 @@ def server_error(e):
                        'result': []})
 
 if __name__ == '__main__':
-    app.run(host="localhost", port=8108)
+    app.run(host="localhost", port=8188)
