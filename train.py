@@ -44,7 +44,7 @@ def train_model(model, X, X_test, Y, Y_test):
     # Use `tensorboard --logdir Checkpoints/logs` in terminal to view graphs
 
     model.fit_generator(generated_data.flow(X, Y, batch_size=64),
-        steps_per_epoch=X.shape[0]//8,
+        steps_per_epoch=X.shape[0]//64,
         epochs=50,
         validation_data=(X_test, Y_test),
         callbacks=[model_checkpoint, tensorboard])
