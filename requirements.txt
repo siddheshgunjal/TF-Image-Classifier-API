@@ -2,10 +2,11 @@ numpy
 requests
 scikit-learn
 scikit-image
-tensorflow
+tensorflow<=2.13.1
 keras
 h5py
 selenium
 Pillow
 Flask
 Flask-Cors
+gunicorn
