@@ -9,7 +9,8 @@ Don't forget to :star: this repo!
 	* [Download training images for your task](#download-training-images-for-your-task)
 	* [Train Neural Network](#train-neural-network)
 	* [Run Prediction from browser](#run-prediction-from-browser)
-* [Support](#support-sparkles)
+* [Deploy on AWS with Docker](#deploy-on-aws-with-docker-rocket) 
+[Support](#support-sparkles)
 * [Author](#author-sunglasses)
 
 
@@ -52,6 +53,9 @@ Drag your image in the drop zone or upload it and click **Run Prediction**, whic
 
 Your Custom Image classification API is ready!
 
+## Deploy on AWS with Docker :rocket:
+Please Refer [AWS docker setup guide][gh-aws-docker] to deploy this application on AWS EC2 instance with docker.
+
 ##  Support :sparkles:
 If you get stuck, we’re here to help. The following are the best ways to get assistance working through your issue:
 
@@ -70,6 +74,7 @@ Contribution are the best way to keep this repo amazing :muscle:
 [conda-env]: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands
 [chrome-driver]: https://googlechromelabs.github.io/chrome-for-testing/
 [gh-issues]: https://github.com/siddheshgunjal/TF-Image-Classifier-API/issues
+[gh-aws-docker]: https://github.com/siddheshgunjal/TF-Image-Classifier-API/blob/main/AWS_docker_setup.md
 [gh-contrib]: https://github.com/siddheshgunjal/TF-Image-Classifier-API/blob/main/CONTRIBUTING.md
 [portfolio]: https://siddheshgunjal.github.io
 [github]: https://github.com/siddheshgunjal
