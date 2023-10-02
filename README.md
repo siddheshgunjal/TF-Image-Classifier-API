@@ -10,7 +10,7 @@ Don't forget to :star: this repo!
 	* [Train Neural Network](#train-neural-network)
 	* [Run Prediction from browser](#run-prediction-from-browser)
 * [Deploy on AWS with Docker](#deploy-on-aws-with-docker-rocket) 
-[Support](#support-sparkles)
+* [Support](#support-sparkles)
 * [Author](#author-sunglasses)
 
 
