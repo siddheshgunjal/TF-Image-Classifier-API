@@ -18,7 +18,7 @@ CORS(app)
 app.config['model'] = "Model/model.json"
 app.config['weights'] = "Model/weights.h5"
 app.config['input_image'] = "Input"
-app.config["server_ip"] = "192.168.1.42" # use "localhost" for testing on local environment
+app.config["server_ip"] = "localhost" # use "localhost" for testing on local environment
 
 # to take absolute path irrespective of OS
 os.path.dirname(os.path.abspath(__file__))

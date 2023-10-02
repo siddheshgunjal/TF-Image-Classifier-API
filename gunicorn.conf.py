@@ -9,8 +9,8 @@ worker_class = 'gthread'
 # Use a number of workers equal to the number of CPU cores available.
 # Reducing this number on a multicore instance will reduce memory consumption,
 # but will also reduce the app's ability to utilize all available CPU resources.
-# workers = multiprocessing.cpu_count()
-workers = 4 # good
+workers = multiprocessing.cpu_count()
+# workers = 4 # good
 
 # Use an arbitrary number of threads for concurrency. This will dictate the
 # maximum number of requests handled concurrently by EACH worker.
