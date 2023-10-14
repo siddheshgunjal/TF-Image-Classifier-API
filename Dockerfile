@@ -35,7 +35,7 @@ RUN chmod -R 777 /usr/src/app
 RUN chmod -R 777 /usr/src
 
 # Application Environment variables
-#ENV APP_ENV development
+# ENV APP_ENV development
 ENV PORT 8188
 
 # Exposing Ports

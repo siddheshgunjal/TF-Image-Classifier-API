@@ -14,7 +14,7 @@ workers = multiprocessing.cpu_count()
 
 # Use an arbitrary number of threads for concurrency. This will dictate the
 # maximum number of requests handled concurrently by EACH worker.
-threads = 6
+threads = 4
 
 # The maximum number of requests a worker will process before restarting.
 # Any value greater than zero will limit the number of requests a worker will process

@@ -21,8 +21,9 @@ Don't forget to :star: this repo!
 
 ## Usage :gear:
 ### Download training images for your task
+To download training images for your classes you can utilise the python script from this [gist][img-scrape-gist]. Procedure to use it is as below:
 * Download chrome driver for your system from this link: [chromedriver][chrome-driver]
-* Open `img_scrapper.py` and add path to chromedriver at `line 11` or just uncomment the path for already included chromedriver for linux/windows.
+* Open python script and add path to chromedriver at `line 11` or just uncomment the path for already included chromedriver for linux/windows.
 * Run scrapper with `python img_scrapper.py` in terminal.
 * Enter the search term (For example: Tiger)
 * Enter the number of images to download (For example: 50)
@@ -31,6 +32,7 @@ Don't forget to :star: this repo!
 * You can download as many images as you want for as many classes.
 
 ### Train Neural Network
+* Put all your training data with folder for each class in `./Data/Train_data/class_name`
 * Start training with `python train.py`. Default epochs to train are set to 100. you can change it as per your need from `line 48` in `train.py`
 * You can also visualize training progress with tensorboard using `tensorboard --logdir Checkpoints/logs`
 * After training finishes, you'll get 2 files
@@ -72,6 +74,7 @@ Contribution are the best way to keep this repo amazing :muscle:
 <!-- Markdown link -->
 [virtualenv]: https://docs.python.org/3/library/venv.html
 [conda-env]: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands
+[img-scrape-gist]: https://gist.github.com/siddheshgunjal/ff7c2b2ee0d98b66245e1efee258a6fa
 [chrome-driver]: https://googlechromelabs.github.io/chrome-for-testing/
 [gh-issues]: https://github.com/siddheshgunjal/TF-Image-Classifier-API/issues
 [gh-aws-docker]: https://github.com/siddheshgunjal/TF-Image-Classifier-API/blob/main/AWS_docker_setup.md
