@@ -38,7 +38,7 @@ As the installation is done successfully, let’s check the version of Docker an
 ### 9. Build Docker Image
 * cd into the project folder and run following command:
 
-		sudo docker build -t imageclassi:0.0.1 .
+	  sudo docker build -t imageclassi:0.0.1 .
 ### 10. Run Flask API in container
 Run the following command to build & run the Container from Docker Image:
 
